@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Sala e Laboratório</h1>
+    </div>
+    <main>
+        <form>
+            <div>
+                <p class="SalaLab">Sala e Laboratório:</p>
+                <input type="text" id="SalaLab" name="SalaLab" maxlength="100" required>
+                <div>
+                    <button type="submit">Cadastrar</button>
+                    <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+                </div>
+            </div>
+        </form>
+
+        <table class="TabelaSalaLab">
+            <thead>
+                <tr>
+                    <th>Sala e Laboratório</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a href="#" class="BtnEditar">Editar</a>
+                        <button class="btnExcluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+          <label class="SalaLab" for="salaLabEditar">Sala e Laboratório:</label>
+          <input type="text" id="salaLabEditar" name="salaLabEditar" maxlength="100" required>
+
+          <button type="submit">Salvar</button>
+          <button type="button" class="BtnVoltar">Cancelar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/CadastroAdm/js.js"></script>
+    <script src="/ModoEscuro/js.js"></script>
+</body>
+</html>

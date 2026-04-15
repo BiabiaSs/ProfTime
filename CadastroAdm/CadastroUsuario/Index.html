@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Usuário</h1>
+    </div>
+    <main>
+        <form>
+            <div>
+                <p class="Nome">Nome:</p>
+                <input type="text" id="Nome" name="Nome" maxlength="100" required>
+
+                <div class="Linha">
+                    <div>
+                        <p class="Email">E-mail:</p>
+                        <input type="text" id="Email" name="Email" maxlength="100" required>
+                    </div>
+
+                    <div>
+                        <p class="Senha">Senha:</p>
+                        <input type="password" id="Senha" name="Senha" maxlength="11" required>
+                    </div>
+                </div>
+        
+                <div class="Linha">
+                    <div>
+                        <p class="Usuário">Usuário:</p>
+                        <select id="Usuario" name="Usuario" required>
+                            <option value="">Selecione</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p class="Foto">Foto:</p>
+                        <input type="file" id="FotoUsuario" name="FotoUsuario">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Cadastrar</button>
+                    <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+                </div>
+            </div>
+        </form>
+
+        <table class="TabelaUsuário">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Senha</th>
+                    <th>Usuário</th>
+                    <th>Foto</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#" class="BtnEditar">Editar</a>
+                        <button class="btnExcluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+          <div>
+            <p class="Nome">Nome:</p>
+            <input type="text" id="nomeEditar" name="nomeEditar" maxlength="100" required>
+
+            <div class="Linha">
+              <div>
+                <p class="Email">E-mail:</p>
+                <input type="text" id="emailEditar" name="emailEditar" maxlength="100" required>
+              </div>
+
+              <div>
+                <p class="Senha">Senha:</p>
+                <input type="password" id="senhaEditar" name="senhaEditar" maxlength="11" required>
+              </div>
+            </div>
+
+            <div class="Linha">
+              <div>
+                <p class="Usuário">Usuário:</p>
+                <select id="usuarioEditar" name="usuarioEditar" required>
+                  <option value="">Selecione</option>
+                </select>
+              </div>
+
+              <div>
+                <p class="Foto">Foto:</p>
+                <input type="file" id="fotoEditar" name="fotoEditar">
+              </div>
+            </div>
+
+            <div>
+              <button type="submit">Salvar</button>
+              <button type="button" class="BtnVoltar">Cancelar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/CadastroAdm/js.js"></script>
+    <script src="/ModoEscuro/js.js"></script>
+</body>
+</html>

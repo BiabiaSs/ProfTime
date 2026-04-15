@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfTime</title>
+  <link rel="stylesheet" href="./css.css">
+  <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+  <div class="TituloPrincipal">
+    <h1>Cadastro de Horário</h1>
+  </div>
+  <main>
+    <form>
+      <div class="Linha">
+        <div>
+          <p class="Semana">Dia da Semana</p>
+          <select id="Semana" name="Semana" required>
+            <option value="">Selecione</option>
+          </select>
+        </div>
+
+        <div>
+          <p class="Fim">Horário Início</p>
+          <input type="time" id="HorarioInicio" name="HorarioInicio" required>
+        </div>
+
+        <div>
+          <p class="Fim">Horário Fim</p>
+          <input type="time" id="HorarioFim" name="HorarioFim" required>
+        </div>
+      </div>
+
+      <p class="Disciplina">Disciplina</p>
+      <select id="Disciplina" name="Disciplina" required>
+        <option value="">Selecione</option>
+      </select>
+
+      <p class="Professor">Professor</p>
+      <select id="Professor" name="Professor" required>
+        <option value="">Selecione</option>
+      </select>
+
+      <p class="Curso">Curso</p>
+      <select id="Curso" name="Curso" required>
+        <option value="">Selecione</option>
+      </select>
+
+      <div class="Linha">
+        <div>
+          <p class="Turma">Turma</p>
+          <select id="Turma" name="Turma" required>
+            <option value="">Selecione</option>
+          </select>
+        </div>
+        <div>
+          <p class="Grupo">Grupo</p>
+          <select id="Grupo" name="Grupo" required>
+            <option value="">Selecione</option>
+          </select>
+        </div>
+        <div>
+          <p class="Sala">Sala</p>
+          <select id="Sala" name="Sala" required>
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit">Cadastrar</button>
+        <a href="/TelasHome/TelaPrincipalCoordenador/index.html" class="BtnVoltar">Voltar</a>
+      </div>
+    </form>
+
+    <table class="TabelaHorario">
+      <thead>
+        <tr>
+          <th>Dia da Semana</th>
+          <th>Horário Início</th>
+          <th>Horário Fim</th>
+          <th>Disciplina</th>
+          <th>Professor</th>
+          <th>Curso</th>
+          <th>Turma</th>
+          <th>Grupo</th>
+          <th>Sala</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td>
+          <td></td><td></td><td></td><td></td>
+          <td>
+            <a href="#" class="BtnEditar">Editar</a>
+            <button class="btnExcluir">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="modalEditar" class="modal">
+    <div class="modalForm">
+      <form id="formEditar">
+        <div class="Linha">
+          <div>
+            <p class="Semana">Dia da Semana</p>
+            <select id="semanaEditar" name="semanaEditar" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="Inicio">Horário Início</p>
+            <input type="time" id="inicioEditar" name="inicioEditar" required>
+          </div>
+
+          <div>
+            <p class="Fim">Horário Fim</p>
+            <input type="time" id="fimEditar" name="fimEditar" required>
+          </div>
+        </div>
+
+        <p class="Disciplina">Disciplina</p>
+        <select id="disciplinaEditar" name="disciplinaEditar" required>
+          <option value="">Selecione</option>
+        </select>
+
+        <p class="Professor">Professor</p>
+        <select id="professorEditar" name="professorEditar" required>
+          <option value="">Selecione</option>
+        </select>
+
+        <p class="Curso">Curso</p>
+        <select id="cursoEditar" name="cursoEditar" required>
+          <option value="">Selecione</option>
+        </select>
+
+        <div class="Linha">
+          <div>
+            <p class="Turma">Turma</p>
+            <select id="turmaEditar" name="turmaEditar" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+          <div>
+            <p class="Grupo">Grupo</p>
+            <select id="grupoEditar" name="grupoEditar" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+          <div>
+            <p class="Sala">Sala</p>
+            <select id="salaEditar" name="salaEditar" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit">Salvar</button>
+          <button type="button" class="BtnVoltar">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/CadastroAdm/js.js"></script>
+  <script src="/ModoEscuro/js.js"></script>
+</body>
+</html>

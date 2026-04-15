@@ -1,0 +1,91 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header{
+  font-size: 48px;
+  text-align: center;
+  margin: 25px 0;
+  font-weight: bold;
+  color: rgb(136, 9, 9);
+}
+
+h1{
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgb(136, 9, 9);
+}
+
+.RedefinirSenha{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.Bloco{
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgb(0,0,0.1);
+  text-align: left;
+}
+
+label{
+  color: rgb(136, 9, 9);
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input{
+  padding: 10px;
+  border: 1px solid rgb(136, 9, 9);
+  margin-bottom: 20px;
+  width: 95%;
+  border-radius: 4px;
+}
+
+.Btn{
+  color: white;
+  background-color: rgb(136, 9, 9);
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.Btn:hover{
+  background-color: rgb(100, 8, 8);
+}
+
+.VoltarLogin{
+  color: rgb(136, 9, 9);
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 19px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.VoltarLogin:hover{
+  text-decoration: underline;
+}
+
+.Footer{
+  font-size: 12px;
+  color: rgb(136, 9, 9);
+  margin-top: 20px;
+  border-top: 1px solid rgb(136, 9, 9);
+  padding-top: 10px;
+  text-align: center;
+}
