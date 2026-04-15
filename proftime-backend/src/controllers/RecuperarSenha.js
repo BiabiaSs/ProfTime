@@ -13,7 +13,7 @@ async function recuperarSenha(req, res) {
     const sql = "UPDATE usuarios SET reset_token = ? WHERE email = ?";
     conexao.query(sql, [token, email]);
 
-    const link = `http://localhost:5500/redefinir.html?token=${token}`;
+    const link = `http://127.0.0.1:5502/RedefinirSenha/index.html?token=${token}`;
 
     await transporter.sendMail({
       from: "Proftime",
