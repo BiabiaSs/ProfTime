@@ -189,7 +189,7 @@ html.dark .TabelaCurso th, html.dark .TabelaDisciplina th, /*Parte dos titulos d
 html.dark .TabelaGrupos th, html.dark .TabelaSalaLab th,
 html.dark .TabelaPeríodo th, html.dark .TabelaProfessor th,
 html.dark .TabelaTurma th, html.dark .TabelaUsuário th,
-html.dark .TabelaProf th, html.dark .TabelaTurma th, .TabelaHorario th{
+html.dark .TabelaProf th, html.dark .TabelaTurma th, html.dark .TabelaHorario th{
   color: var(--Cor-Texto);
   background-color: black;
   border: 1px solid white;
@@ -199,7 +199,7 @@ html.dark .TabelaCurso td, html.dark .TabelaDisciplina td, /*Parte de baixo da t
 html.dark .TabelaGrupos td, html.dark .TabelaSalaLab td,
 html.dark .TabelaPeríodo td, html.dark .TabelaProfessor td,
 html.dark .TabelaTurma td, html.dark .TabelaUsuário td,
-html.dark .TabelaProf td, html.dark .TabelaTurma td, .TabelaHorario td{
+html.dark .TabelaProf td, html.dark .TabelaTurma td, html.dark .TabelaHorario td{
   color: var(--Cor-Fundo);
   background-color: var(--Cor-Texto);
   border: 1px solid black;
