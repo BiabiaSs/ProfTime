@@ -32,12 +32,12 @@ html.dark{
 }
 
 html.dark  .BtnDark::after{ /*- Cria um conteúdo depois do elemento selecionado.*/
-  content: "🌙";
+  content: "";
   left: 36px;
 }
 
 .BtnDark::after{ 
-  content: "☀️";
+  content: "";
   width: 30px;
   left: 0;
   background: white;
