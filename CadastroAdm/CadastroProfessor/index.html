@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfTime</title>
+
     <link rel="stylesheet" href="./css.css">
-    <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
 </head>
+
 <body>
     <div class="TituloPrincipal">
         <h1>Cadastro de Professor</h1>
     </div>
+
     <main>
-        <form>
+        <!-- FORM COM ID -->
+        <form id="formProfessor">
             <div>
                 <p class="Professor">Professor:</p>
-                <input type="text" id="Professor" name="Professor" maxlength="100" required>
+                <input type="text" id="Professor" required>
+
                 <div>
                     <button type="submit">Cadastrar</button>
                     <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
@@ -30,30 +35,26 @@
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td>
-                        <a href="" class="BtnEditar">Editar</a>
-                        <button class="btnExcluir">Excluir</button>
-                    </td>
-                </tr>
-            </tbody>
+
+            <!-- TABELA LIMPA -->
+            <tbody id="tabelaProfessor"></tbody>
         </table>
     </main>
 
+    <!-- MODAL (deixa pra depois) -->
     <div id="modalEditar" class="modal">
       <div class="modalForm">
         <form id="formEditar">
-          <label class="Professor" for="professorEditar">Professor:</label>
-          <input type="text" id="professorEditar" name="professorEditar" maxlength="100" required>
-
+          <input type="text" id="professorEditar">
           <button type="submit">Salvar</button>
           <button type="button" class="BtnVoltar">Cancelar</button>
         </form>
       </div>
     </div>
-    <script src="/CadastroAdm/js.js"></script>
-    <script src="/ModoEscuro/js.js"></script>
+
+    <!-- JS -->
+    <script src="../../ModoEscuro/js.js"></script>
+    <script src="./professor.js"></script>
+
 </body>
 </html>

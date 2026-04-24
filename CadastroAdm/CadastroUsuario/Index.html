@@ -4,42 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfTime</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css.css">
-    <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
 </head>
+
 <body>
     <div class="TituloPrincipal">
         <h1>Cadastro de Usuário</h1>
     </div>
+
     <main>
-        <form>
+        <!-- FORM COM ID -->
+        <form id="formUsuario">
             <div>
                 <p class="Nome">Nome:</p>
-                <input type="text" id="Nome" name="Nome" maxlength="100" required>
+                <input type="text" id="Nome" required>
 
                 <div class="Linha">
                     <div>
                         <p class="Email">E-mail:</p>
-                        <input type="text" id="Email" name="Email" maxlength="100" required>
+                        <input type="text" id="Email" required>
                     </div>
 
                     <div>
                         <p class="Senha">Senha:</p>
-                        <input type="password" id="Senha" name="Senha" maxlength="11" required>
+                        <input type="password" id="Senha" required>
                     </div>
                 </div>
-        
+
                 <div class="Linha">
                     <div>
-                        <p class="Usuário">Usuário:</p>
-                        <select id="Usuario" name="Usuario" required>
+                        <p class="Usuário">Tipo:</p>
+                        <select id="Usuario" required>
                             <option value="">Selecione</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Professor">Professor</option>
                         </select>
                     </div>
 
                     <div>
                         <p class="Foto">Foto:</p>
-                        <input type="file" id="FotoUsuario" name="FotoUsuario">
+                        <input type="file" id="FotoUsuario">
                     </div>
                 </div>
 
@@ -50,76 +57,39 @@
             </div>
         </form>
 
-        <table class="TabelaUsuário">
+        <table class="TabelaUsuario">
             <thead>
                 <tr>
                     <th>Nome</th>
                     <th>E-mail</th>
                     <th>Senha</th>
-                    <th>Usuário</th>
-                    <th>Foto</th>
+                    <th>Tipo</th>
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <a href="" class="BtnEditar">Editar</a>
-                        <button class="btnExcluir">Excluir</button>
-                    </td>
-                </tr>
-            </tbody>
+
+            <!-- TABELA LIMPA -->
+            <tbody id="tabelaUsuarios"></tbody>
         </table>
     </main>
 
+    <!-- MODAL (deixa pra depois) -->
     <div id="modalEditar" class="modal">
       <div class="modalForm">
         <form id="formEditar">
-          <div>
-            <p class="Nome">Nome:</p>
-            <input type="text" id="nomeEditar" name="nomeEditar" maxlength="100" required>
+            <input type="text" id="nomeEditar">
+            <input type="text" id="emailEditar">
+            <input type="password" id="senhaEditar">
 
-            <div class="Linha">
-              <div>
-                <p class="Email">E-mail:</p>
-                <input type="text" id="emailEditar" name="emailEditar" maxlength="100" required>
-              </div>
-
-              <div>
-                <p class="Senha">Senha:</p>
-                <input type="password" id="senhaEditar" name="senhaEditar" maxlength="11" required>
-              </div>
-            </div>
-
-            <div class="Linha">
-              <div>
-                <p class="Usuário">Usuário:</p>
-                <select id="usuarioEditar" name="usuarioEditar" required>
-                  <option value="">Selecione</option>
-                </select>
-              </div>
-
-              <div>
-                <p class="Foto">Foto:</p>
-                <input type="file" id="fotoEditar" name="fotoEditar">
-              </div>
-            </div>
-
-            <div>
-              <button type="submit">Salvar</button>
-              <button type="button" class="BtnVoltar">Cancelar</button>
-            </div>
-          </div>
+            <button type="submit">Salvar</button>
+            <button type="button" class="BtnVoltar">Cancelar</button>
         </form>
       </div>
     </div>
 
-    <script src="/CadastroAdm/js.js"></script>
-    <script src="/ModoEscuro/js.js"></script>
+    <!-- JS -->
+    <script src="../../ModoEscuro/js.js"></script>
+    <script src="./usuario.js"></script>
+
 </body>
 </html>

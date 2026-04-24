@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfTime</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css.css">
-    <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
 </head>
+
 <body>
     <div class="TituloPrincipal">
         <h1>Cadastro de Cursos</h1>
     </div>
+
    <main>
-    <form>
+    <!-- FORM COM ID -->
+    <form id="formCurso">
         <div>
             <p class="Curso">Curso:</p> 
             <input type="text" id="Curso" name="Curso" maxlength="100" required>
+
             <div>
                 <button type="submit">Cadastrar</button> 
                 <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
@@ -30,23 +36,19 @@
                 <th>Ações</th>
             </tr>
         </thead>
-        <tbody> 
-            <tr>
-                <td></td>
-                <td>
-                <a href="" class="BtnEditar">Editar</a>
-                <button class="btnExcluir">Excluir</button>
-                </td>
-            </tr>
-        </tbody>
+
+        <!-- TABELA LIMPA COM ID -->
+        <tbody id="tabelaCursos"></tbody>
     </table>
     </main>
 
+    <!-- MODAL -->
     <div id="modalEditar" class="modal">
       <div class="modalForm">
         <form id="formEditar">
-          <label class="Curso"  for="cursoEditar">Curso:</label>
+          <label class="Curso" for="cursoEditar">Curso:</label>
           <input type="text" id="cursoEditar" name="cursoEditar" maxlength="100" required>
+
           <div>
             <button type="submit">Salvar</button>
             <button type="button" class="BtnVoltar">Cancelar</button>
@@ -55,7 +57,9 @@
       </div>
     </div>
 
-    <script src="/CadastroAdm/js.js"></script>
-    <script src="/ModoEscuro/js.js"></script>
+    <!-- JS (ORDEM IMPORTA) -->
+    <script src="../../ModoEscuro/js.js"></script>
+    <script src="./curso.js"></script>
+
 </body>
 </html>
