@@ -4,56 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfTime</title>
+
     <link rel="stylesheet" href="./css.css">
-    <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
 </head>
+
 <body>
     <div class="TituloPrincipal">
         <h1>Cadastro de Grupos</h1>
     </div>
+
     <main>
-        <form>
+        <form id="formGrupo">
             <div>
-                <p class="Grupo">Grupo:</p>
-                <input type="text" id="Grupo" name="Grupo" maxlength="45" required>
+                <p class="Grupo">Grupo:</p> 
+                <input type="text" id="Grupo" required>
+
                 <div>
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Cadastrar</button> 
                     <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
                 </div>
             </div>
         </form>
 
-        <table class="TabelaGrupos">
-            <thead>
-                <tr>
-                    <th>Grupo</th>
+        <table class="TabelaGrupo">  
+            <thead> 
+                <tr> 
+                    <th>Grupo</th>   
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td>
-                        <a href="" class="BtnEditar">Editar</a>
-                        <button class="btnExcluir">Excluir</button>
-                    </td>
-                </tr>
-            </tbody>
+
+            <tbody id="tabelaGrupo"></tbody>
         </table>
     </main>
 
     <div id="modalEditar" class="modal">
       <div class="modalForm">
         <form id="formEditar">
-          <label class="Grupo" for="grupoEditar">Grupo:</label>
-          <input type="text" id="grupoEditar" name="grupoEditar" maxlength="45" required>
+
+          <input type="text" id="grupoEditar" required>
 
           <button type="submit">Salvar</button>
           <button type="button" class="BtnVoltar">Cancelar</button>
+
         </form>
       </div>
     </div>
-    <script src="/CadastroAdm/js.js"></script>
-    <script src="/ModoEscuro/js.js"></script>
+
+    <script src="../../ModoEscuro/js.js"></script>
+    <script src="./grupo.js"></script>
+
 </body>
 </html>
