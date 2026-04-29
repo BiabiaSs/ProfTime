@@ -46,7 +46,7 @@ form {
   font-weight: bold;
 }
 
-input{
+select{
   padding: 8px;
   margin-top: 5px;
   width: 95%;
@@ -90,18 +90,18 @@ button:hover {
   background-color: rgb(168, 8, 8);
 }
 
-.tabelaGrupo tr:hover{
+.TabelaGrupos tr:hover{
   background-color: #f9f9f9;
 }
 
-.TabelaGrupo {
+.TabelaGrupos{
   width: 45%;
   margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
   border-collapse: collapse;
 }
 
-.TabelaGrupo th, .TabelaGrupo td {
+.TabelaGrupos th, .TabelaGrupos td{
   width: 65%;
   padding: 10px;
   font-size: 14px;
@@ -109,17 +109,16 @@ button:hover {
   border: 1px solid rgb(136, 9, 9);
 }
 
-.TabelaGrupo th {
+.TabelaGrupos th{
   background-color: rgb(136, 9, 9);
   color: white;
 }
 
-.TabelaGrupo td {
+.TabelaGrupos td {
   word-wrap: break-word;  
   white-space: normal;     
   max-width: 130px;       
 }
-
 
 .modal {
   display: none; 
