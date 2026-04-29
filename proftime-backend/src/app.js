@@ -16,10 +16,8 @@ app.use('/teste', testeRota);*/
 
 const rotasLogin = require('./rotas/rotasLogin');
 const rotasUsuarios = require('./rotas/rotasUsuarios');
-const rotasGrupos = require('./rotas/rotasGrupos');
 
 app.use('/login', rotasLogin);
 app.use('/usuarios', rotasUsuarios);  
-app.use('/grupos', rotasGrupos); 
     
 module.exports = app;
