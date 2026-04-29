@@ -118,14 +118,14 @@ button:hover {
   background-color: #f9f9f9;
 }
 
-.TabelaUsuário{
+.TabelaUsuario{
   width: 49%;
   margin: 20px auto;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
   border-collapse: collapse;
 }
 
-.TabelaUsuário th, .TabelaUsuário td{
+.TabelaUsuario th, .TabelaUsuario td{
   width: 3%;
   padding: 10px;
   font-size: 14px;
@@ -134,13 +134,13 @@ button:hover {
   text-align: center;
 }
 
-.TabelaUsuário td {
+.TabelaUsuario td {
   word-wrap: break-word;  
   white-space: normal;     
   max-width: 130px;       
 }
 
-.TabelaUsuário th{
+.TabelaUsuario th{
   background-color: rgb(136, 9, 9);
   color: white;
 }

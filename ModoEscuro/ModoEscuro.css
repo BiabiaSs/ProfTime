@@ -188,7 +188,7 @@ html.dark .Fim, html.dark .Sala {
 html.dark .TabelaCurso th, html.dark .TabelaDisciplina th, /*Parte dos titulos da tabela*/
 html.dark .TabelaGrupos th, html.dark .TabelaSalaLab th,
 html.dark .TabelaPeríodo th, html.dark .TabelaProfessor th,
-html.dark .TabelaTurma th, html.dark .TabelaUsuário th,
+html.dark .TabelaTurma th, html.dark .TabelaUsuario th,
 html.dark .TabelaProf th, html.dark .TabelaTurma th, html.dark .TabelaHorario th{
   color: var(--Cor-Texto);
   background-color: black;
@@ -198,7 +198,7 @@ html.dark .TabelaProf th, html.dark .TabelaTurma th, html.dark .TabelaHorario th
 html.dark .TabelaCurso td, html.dark .TabelaDisciplina td, /*Parte de baixo da tabela*/
 html.dark .TabelaGrupos td, html.dark .TabelaSalaLab td,
 html.dark .TabelaPeríodo td, html.dark .TabelaProfessor td,
-html.dark .TabelaTurma td, html.dark .TabelaUsuário td,
+html.dark .TabelaTurma td, html.dark .TabelaUsuario td,
 html.dark .TabelaProf td, html.dark .TabelaTurma td, html.dark .TabelaHorario td{
   color: var(--Cor-Fundo);
   background-color: var(--Cor-Texto);
