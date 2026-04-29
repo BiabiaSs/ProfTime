@@ -38,11 +38,16 @@ form {
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
-.Nome, .Email, .Senha, .Usuário, .Foto{
+.Nome, .Email, .Senha, .Usuário, #FotoIcone p,
+#FotoIconeEditar p{
   text-align: left;
   padding: 5px;
   margin-top: 5px;
   width: 95%;
+  font-weight: bold;
+}
+
+.Fotos{
   font-weight: bold;
 }
 
@@ -75,6 +80,13 @@ select{
   width: 97%;
   border: 1px solid rgb(136, 9, 9);
   border-radius: 5px;
+}
+
+#Usuario, #usuarioEditar {
+  width: 99%;   
+  height: 30px;  
+  font-size: 15px; 
+  padding: 5px;   
 }
 
 button, .BtnVoltar{
@@ -118,14 +130,14 @@ button:hover {
   background-color: #f9f9f9;
 }
 
-.TabelaUsuario{
+.TabelaUsuário{
   width: 49%;
   margin: 20px auto;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
   border-collapse: collapse;
 }
 
-.TabelaUsuario th, .TabelaUsuario td{
+.TabelaUsuário th, .TabelaUsuário td{
   width: 3%;
   padding: 10px;
   font-size: 14px;
@@ -134,13 +146,13 @@ button:hover {
   text-align: center;
 }
 
-.TabelaUsuario td {
+.TabelaUsuário td {
   word-wrap: break-word;  
   white-space: normal;     
   max-width: 130px;       
 }
 
-.TabelaUsuario th{
+.TabelaUsuário th{
   background-color: rgb(136, 9, 9);
   color: white;
 }
@@ -190,4 +202,34 @@ button:hover {
 
 .modalForm input#fotoEditar {
   margin-bottom: 15px; 
+}
+
+#opcoesIcones label,
+#opcoesIconesEditar label {
+  display: inline-block;   
+  margin-right: 10px;      
+  cursor: pointer;
+  font-size: 24px;         
+}
+
+#FotoIcone,
+#FotoIconeEditar {
+  display: flex;
+  align-items: center;   
+  margin-top: 10px;
+}
+
+#FotoIcone p,
+#FotoIconeEditar p {
+  width: 120px;          
+  margin: 0;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  accent-color: blue; 
+}
+
+input[type="radio"]:checked {
+  accent-color: rgb(136, 9, 9);
 }

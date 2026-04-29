@@ -1,95 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProfTime</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css.css">
-    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfTime</title>
+  <link rel="stylesheet" href="./css.css">
+  <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
 </head>
-
 <body>
-    <div class="TituloPrincipal">
-        <h1>Cadastro de Usuário</h1>
-    </div>
+  <div class="TituloPrincipal">
+    <h1>Cadastro de Usuário</h1>
+  </div>
+  <main>
+    <form>
+      <div>
+        <p class="Nome">Nome:</p>
+        <input type="text" id="Nome" name="Nome" maxlength="100" required>
 
-    <main>
-        <!-- FORM COM ID -->
-        <form id="formUsuario">
+        <div class="Linha">
+          <div>
+            <p class="Email">E-mail:</p>
+            <input type="text" id="Email" name="Email" maxlength="100" required>
+          </div>
+
+          <div>
+            <p class="Senha">Senha:</p>
+            <input type="password" id="Senha" name="Senha" maxlength="11" required>
+          </div>
+        </div>
+
+        <div class="Linha">
+          <div>
+            <p class="Usuário">Usuário:</p>
+            <select id="Usuario" name="Usuario" required>
+              <option value="">Selecione</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Coordenador">Coordenador</option>
+              <option value="Professor">Professor</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="Foto" id="FotoIcone">
+          <label class="Fotos">
+            <input type="radio" id="BtnFoto" name="tipoImagem" value="foto" checked>
+            Foto
+          </label>
+          <label class="Fotos">
+            <input type="radio" id="BtnIcone" name="tipoImagem" value="icone">
+            Ícone
+          </label>
+
+          <div id="campoFoto">
+            <input type="file" id="FotoUsuario" name="FotoUsuario">
+          </div>
+
+          <div id="opcoesIcones">
+            <label>
+              <input type="radio" name="icone" value="icone1.png">
+              <img src="/Imagem/Anotação_2026-04-29_155631__2_-removebg-preview.png"  width="40" height="40">
+            </label>
+            <label>
+              <input type="radio" name="icone" value="icone2.png">
+              <img src="/Imagem/Anotação_2026-04-29_155631__3_-removebg-preview.png" width="40" height="40">
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit">Cadastrar</button>
+          <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+        </div>
+      </div>
+    </form>
+
+    <table class="TabelaUsuário">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Senha</th>
+          <th>Usuário</th>
+          <th>Foto/Ícone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaUsuarios">
+      </tbody>
+    </table>
+  </main>
+
+  <div id="modalEditar" class="modal">
+    <div class="modalForm">
+      <form id="formEditar">
+        <div>
+          <p class="Nome">Nome:</p>
+          <input type="text" id="nomeEditar" name="nomeEditar" maxlength="100" required>
+
+          <div class="Linha">
             <div>
-                <p class="Nome">Nome:</p>
-                <input type="text" id="Nome" required>
-
-                <div class="Linha">
-                    <div>
-                        <p class="Email">E-mail:</p>
-                        <input type="text" id="Email" required>
-                    </div>
-
-                    <div>
-                        <p class="Senha">Senha:</p>
-                        <input type="password" id="Senha" required>
-                    </div>
-                </div>
-
-                <div class="Linha">
-                    <div>
-                        <p class="Usuário">Tipo:</p>
-                        <select id="Usuario" required>
-                            <option value="">Selecione</option>
-                            <option value="Admin">Admin</option>
-                            <option value="Professor">Professor</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <p class="Foto">Foto:</p>
-                        <input type="file" id="FotoUsuario">
-                    </div>
-                </div>
-
-                <div>
-                    <button type="submit">Cadastrar</button>
-                    <a href="/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
-                </div>
+              <p class="Email">E-mail:</p>
+              <input type="text" id="emailEditar" name="emailEditar" maxlength="100" required>
             </div>
-        </form>
 
-        <table class="TabelaUsuario">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Senha</th>
-                    <th>Tipo</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
+            <div>
+              <p class="Senha">Senha:</p>
+              <input type="password" id="senhaEditar" name="senhaEditar" maxlength="11" required>
+            </div>
+          </div>
 
-            <!-- TABELA LIMPA -->
-            <tbody id="tabelaUsuarios"></tbody>
-        </table>
-    </main>
+          <div class="Linha">
+            <div>
+              <p class="Usuário">Usuário:</p>
+              <select id="usuarioEditar" name="usuarioEditar" required>
+                <option value="">Selecione</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Coordenador">Coordenador</option>
+                <option value="Professor">Professor</option>
+              </select>
+            </div>
+          </div>
 
-    <!-- MODAL (deixa pra depois) -->
-    <div id="modalEditar" class="modal">
-      <div class="modalForm">
-        <form id="formEditar">
-            <input type="text" id="nomeEditar">
-            <input type="text" id="emailEditar">
-            <input type="password" id="senhaEditar">
+          <div class="Foto" id="FotoIconeEditar">
+            <label class="Fotos">
+              <input type="radio" id="BtnFotoEditar" name="tipoImagemEditar" value="foto" checked>
+              Foto
+            </label>
+            <label class="Fotos">
+              <input type="radio" id="BtnIconeEditar" name="tipoImagemEditar" value="icone">
+              Ícone
+            </label>
 
+            <div id="campoFotoEditar">
+              <input type="file" id="fotoEditar" name="fotoEditar">
+            </div>
+
+            <div id="opcoesIconesEditar">
+              <label>
+                <input type="radio" name="iconeEditar" value="icone1.png">
+                <img src="/Imagem/Anotação_2026-04-29_155631__2_-removebg-preview.png" width="40" height="40">
+              </label>
+              <label>
+                <input type="radio" name="iconeEditar" value="icone2.png">
+                <img src="/Imagem/Anotação_2026-04-29_155631__3_-removebg-preview.png" width="40" height="40">
+              </label>
+            </div>
+          </div>
+
+          <div>
             <button type="submit">Salvar</button>
             <button type="button" class="BtnVoltar">Cancelar</button>
-        </form>
-      </div>
+          </div>
+        </div>
+      </form>
     </div>
-
-    <!-- JS -->
-    <script src="../../ModoEscuro/js.js"></script>
-    <script src="./usuario.js"></script>
-
+  </div>
+  <script src="./js.js"></script>
+  <script src="/ModoEscuro/js.js"></script>
 </body>
 </html>
