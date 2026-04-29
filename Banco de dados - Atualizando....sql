@@ -28,12 +28,11 @@ CREATE TABLE curso (
 );
  CREATE TABLE sala (
    id_sala INT AUTO_INCREMENT PRIMARY KEY,
-   tipo_sala ENUM('sala_de_aula','laboratorio') NOT NULL,
-   capacidade INT
+   nome_sala VARCHAR(100) NOT NULL,
 );
 CREATE TABLE grupo (
    id_grupo INT AUTO_INCREMENT PRIMARY KEY,
-   nome_grupo ENUM('A','B','A_B') NOT NULL
+   nome_grupo ENUM('grupo A',' grupo B','grupo A e B') NOT NULL
 );
  CREATE TABLE turmas (
    id_turma INT AUTO_INCREMENT PRIMARY KEY,
