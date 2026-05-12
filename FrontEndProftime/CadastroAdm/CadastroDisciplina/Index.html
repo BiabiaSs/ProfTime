@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/FrontEndProftime/ModoEscuro/ModoEscuro.css">
+</head>
+
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Disciplinas</h1>
+    </div>
+
+    <main>
+        <!-- 🔥 FORM COM ID -->
+        <form id="formDisciplina">
+            <div>
+                <p class="Curso">Disciplina:</p> 
+                <input type="text" id="Disciplina" required>
+
+                <p class="Curso">Curso:</p>
+                <select id="Curso" required>
+                    <option value="">Selecione</option>
+                </select>
+
+                <div>
+                    <button type="submit">Cadastrar</button> 
+                    <a href="/FrontEndProftime/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+                </div>
+            </div>
+        </form>
+
+        <table class="TabelaDisciplina">  
+            <thead> 
+                <tr> 
+                    <th>Disciplina</th>   
+                    <th>Curso</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <!-- 🔥 TABELA LIMPA -->
+            <tbody id="tabelaDisciplina"></tbody>
+        </table>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+
+          <input type="text" id="disciplinaEditar" required>
+
+          <select id="cursoEditar" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <button type="submit">Salvar</button>
+          <button type="button" class="BtnVoltar">Cancelar</button>
+
+        </form>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="/FrontEndProftime/ModoEscuro/js.js"></script>
+    <script src="./disciplina.js"></script>
+
+</body>
+</html>

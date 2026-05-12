@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/FrontEndProftime/ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Professor e Disciplina</h1>
+    </div>
+    <main>
+        <form>
+            <div>
+                <p class="Professor">Professor:</p>
+                <select id="Professor" name="Professor" required>
+                    <option value="">Selecione</option>
+                </select>
+
+                <p class="Disciplina">Disciplina:</p>
+                <select id="Disciplina" name="Disciplina" required>
+                    <option value="">Selecione</option>
+                </select>
+
+                <div>
+                    <button type="submit">Cadastrar</button>
+                    <a href="/FrontEndProftime/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+                </div>
+            </div>
+        </form>
+
+        <table class="TabelaProf">
+            <thead>
+                <tr>
+                    <th>Professor</th>
+                    <th>Disciplina</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="" class="BtnEditar">Editar</a>
+                        <button class="btnExcluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+          <label class="Professor" for="professorEditar">Professor:</label>
+          <select id="professorEditar" name="professorEditar" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <label class="Professor" for="disciplinaEditar">Disciplina:</label>
+          <select id="disciplinaEditar" name="disciplinaEditar" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <button type="submit">Salvar</button>
+          <button type="button" class="BtnVoltar">Cancelar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/CadastroAdm/js.js"></script>
+    <script src="/FrontEndProftime/ModoEscuro/js.js"></script>
+</body>
+</html>

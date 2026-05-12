@@ -1,0 +1,104 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    margin: 25px 0;
+    color: rgb(136, 9, 9);
+    font-weight: bold;
+}
+
+.Login{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+.Bloco{
+    padding: 30px;
+    background-color: white;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+h2{
+    color: rgb(136, 9, 9);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(136, 9, 9);
+    display: block;
+}
+
+select{
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 1px solid rgb(136, 9, 9);
+}
+
+input{
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid rgb(136, 9, 9);
+}
+
+.Form{
+    display: flex;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.Btn{
+    color: white;
+    background-color: rgb(136, 9, 9);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Btn:hover{
+    background-color: rgb(100, 8, 8);
+}
+
+.EsqueceuSenha{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.EsqueceuSenha a{
+    color: rgb(136, 9, 9);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.EsqueceuSenha a:hover{
+    text-decoration: underline;
+}
+
+.Footer{
+    font-size: 12px;
+    color: rgb(136, 9, 9);
+    margin-top: 20px;
+    border-top: 1px solid rgb(136, 9, 9);
+    padding-top: 10px;
+    text-align: center;
+}

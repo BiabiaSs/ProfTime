@@ -1,0 +1,243 @@
+html.dark{
+  --Cor-Fundo: #121212;
+  --Texto-Menu: white;
+  --Fundo-Bloco: #1f1f1f;
+  --Texto-Rodape: white;
+  --Cor-Texto: white;
+  --Texto-Bloco: white;
+  --Fundo-Menu: #1f1f1f;
+  --Botao-Fundo: #333;
+  --Botao-Hover: #555;
+}
+
+.BtnDark {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  width: 70px;
+  height: 34px;
+  padding: 2px;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(136,9,9);
+  transition: background-color 0.3s;
+}
+
+.BtnDark:hover{
+  background-color: rgb(136,9,9) ;
+}
+
+html.dark  .BtnDark::after{ /*- Cria um conteúdo depois do elemento selecionado.*/
+  content: "";
+  left: 36px;
+}
+
+.BtnDark::after{ 
+  content: "";
+  width: 30px;
+  left: 0;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  position: relative;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+html.dark body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--Cor-Texto);
+  background-color: var(--Cor-Fundo);
+}
+
+html.dark footer{
+  background-color: var(--Fundo-Menu);
+  color: var(--Cor-Texto);
+  border-top: 1px solid white;
+}
+
+/*Tela login*/
+html.dark h1, html.dark h2, html.dark h3, html.dark h4 {
+    color: var(--Cor-Texto);
+}
+
+html.dark .ProfTime{
+    color: var(--Cor-Texto);
+}
+
+html.dark .Container {      
+  background-color: var(--Fundo-Bloco);
+  color: var(--Texto-Bloco);        
+}
+
+html.dark .Bloco{
+    background-color: var(--Fundo-Menu);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+html.dark label{
+    color: var(--Cor-Texto);
+}
+
+html.dark select{
+    border: 1px solid rgb(136, 9, 9);
+}
+
+html.dark input{
+    border: 1px solid rgb(136, 9, 9);
+}
+
+html.dark .EsqueceuSenha a{
+  color: var(--Cor-Texto);
+}
+/*Tela recuperar senha e botões*/
+html.dark .Btn-EsqueceuSenha{
+  color: white;
+}
+
+html.dark .Btn{
+  background-color: var(--Botao-Fundo); 
+  color: var(--Texto-Menu);
+}
+
+html.dark .Btn:hover{
+  background-color: var(--Botao-Hover); 
+}
+
+html.dark .Btn-voltar{
+  background-color: var(--Botao-Fundo); 
+  color: var(--Texto-Menu);
+}
+
+html.dark .Login button:hover {
+  background-color: var(--Botao-Hover); 
+}
+
+html.dark .Btn-voltar:hover{
+  background-color: var(--Botao-Hover); 
+}
+
+html.dark .VoltarLogin, html.dark .SenhaRedefinir, 
+html.dark .SenhaConfirmar, html.dark .EmailRecuperar{
+  color: var(--Cor-Texto);
+}
+
+/*Tela home cod,adm,prof*/
+
+/*Painel e os botões*/
+html.dark .Painel{
+  background-color: var(--Fundo-Bloco);
+  color: var(--Texto-Rodape);
+}
+
+html.dark .AdmFoto{
+  background-color: var(--Fundo-Bloco);
+  border: 2px solid var(--Texto-Menu);
+}
+
+html.dark .BtnSair{
+  background-color: var(--Texto-Bloco);
+  color: var(--Botao-Fundo);
+  font-weight: bold;
+}
+
+html.dark .BtnSair:hover{
+  background-color: var(--Botao-Hover);
+}
+
+/*Botões e Blocos de Cadastro*/
+
+html.dark .Blocos div{
+  background-color: var(--Fundo-Bloco);
+  color: var(--Texto-Bloco);
+}
+
+html.dark .Blocos button{
+  background-color: var(--Botao-Fundo);
+  color: var(--Texto-Bloco);
+}
+
+html.dark .Blocos button:hover{
+  background-color: var(--Botao-Hover);
+}
+
+/*Tela de Cadastro e Visualização*/
+
+html.dark .TituloPrincipal{
+  color: var(--Cor-Texto);
+  background-color: var(--Cor-Fundo);
+  border-color: 1px solid var(--Cor-Texto);
+}
+
+html.dark .Curso, html.dark .Disciplina, html.dark .Curso, /*Nomes dos Campos*/
+html.dark .Grupo, html.dark .SalaLab, html.dark .Período,
+html.dark .Professor, html.dark .Turma,html.dark .Nome, 
+html.dark .Email, html.dark .Senha, html.dark .Usuário, 
+html.dark .Foto,html.dark .Semana, html.dark .Início, 
+html.dark .Fim, html.dark .Sala {
+  color: var(--Cor-Fundo);
+}
+
+html.dark .TabelaCurso th, html.dark .TabelaDisciplina th, /*Parte dos titulos da tabela*/
+html.dark .TabelaGrupos th, html.dark .TabelaSalaLab th,
+html.dark .TabelaPeríodo th, html.dark .TabelaProfessor th,
+html.dark .TabelaTurma th, html.dark .TabelaUsuario th,
+html.dark .TabelaProf th, html.dark .TabelaTurma th, html.dark .TabelaHorario th{
+  color: var(--Cor-Texto);
+  background-color: black;
+  border: 1px solid white;
+}
+
+html.dark .TabelaCurso td, html.dark .TabelaDisciplina td, /*Parte de baixo da tabela*/
+html.dark .TabelaGrupos td, html.dark .TabelaSalaLab td,
+html.dark .TabelaPeríodo td, html.dark .TabelaProfessor td,
+html.dark .TabelaTurma td, html.dark .TabelaUsuario td,
+html.dark .TabelaProf td, html.dark .TabelaTurma td, html.dark .TabelaHorario td{
+  color: var(--Cor-Fundo);
+  background-color: var(--Cor-Texto);
+  border: 1px solid black;
+}
+
+html.dark button, .dark .BtnVoltar, 
+html.dark .BtnEditar,html.dark .btnExcluir{ /*Botões da tela de Cadastro*/
+  color: var(--Cor-Texto);
+  background-color: var(--Botao-Fundo);
+}
+
+html.dark button:hover, .dark .BtnVoltar:hover, 
+html.dark .BtnEditar:hover,html.dark .btnExcluir:hover{ /*Botões da tela de Cadastro*/
+  background-color: var(--Botao-Hover);
+}
+
+html.dark input{
+  border: 1px solid var(--Cor-Fundo);
+}
+
+html.dark select{
+  border: 1px solid var(--Cor-Fundo);
+}
+
+html.dark #FotoIcone p,
+html.dark #FotoIconeEditar p {
+ color: #121212;
+ background-color: #121212;
+}
+
+html.dark .Fotos:first-of-type {
+  color: black;
+}
+
+html.dark .Fotos:last-of-type {
+  color: black;
+}
+
+html.dark input[type="radio"] {
+  accent-color: var(--Cor-Fundo); 
+}

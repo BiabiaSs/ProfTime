@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/FrontEndProftime/ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Turma</h1>
+    </div>
+    <main>
+        <form>
+            <div>
+                <p class="Turma">Turma:</p>
+                <input type="text" id="Turma" name="Turma" maxlength="60" required>
+            </div>
+       
+            <div class="Linha">
+                <div>
+                    <p class="Grupo">Grupo:</p>
+                    <select id="Grupo" name="Grupo" required>
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="SalaLab">Sala:</p>
+                    <select id="SalaLab" name="SalaLab" required>
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Cadastrar</button>
+                <a href="/FrontEndProftime/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+            </div>
+        </form>
+
+        <table class="TabelaTurma">
+            <thead>
+                <tr>
+                    <th>Turma</th>
+                    <th>Grupo</th>
+                    <th>Sala</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="" class="BtnEditar">Editar</a>
+                        <button class="btnExcluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+          <label class="Turma" for="turmaEditar">Turma:</label>
+          <input type="text" id="turmaEditar" name="turmaEditar" maxlength="60" required>
+
+          <label class="Grupo" for="grupoEditar">Grupo:</label>
+          <select id="grupoEditar" name="grupoEditar" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <label class="SalaLab" for="salaEditar">Sala:</label>
+          <select id="salaEditar" name="salaEditar" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <button type="submit">Salvar</button>
+          <button type="button" class="BtnVoltar">Cancelar</button>
+          
+        </form>
+      </div>
+    </div>
+    <script src="/CadastroAdm/js.js"></script>
+    <script src="/FrontEndProftime/ModoEscuro/js.js"></script>
+</body>
+</html>

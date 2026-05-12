@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/FrontEndProftime/ModoEscuro/ModoEscuro.css">
+</head>
+
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Cursos</h1>
+    </div>
+
+   <main>
+    <!-- FORM COM ID -->
+    <form id="formCurso">
+        <div>
+            <p class="Curso">Curso:</p> 
+            <input type="text" id="Curso" name="Curso" maxlength="100" required>
+
+            <div>
+                <button type="submit">Cadastrar</button> 
+                <a href="/FrontEndProftime/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+            </div>
+        </div>
+    </form>
+
+    <table class="TabelaCurso">  
+        <thead> 
+            <tr> 
+                <th>Curso</th>   
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <!-- TABELA LIMPA COM ID -->
+        <tbody id="tabelaCursos"></tbody>
+    </table>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+          <label class="Curso" for="cursoEditar">Curso:</label>
+          <input type="text" id="cursoEditar" name="cursoEditar" maxlength="100" required>
+
+          <div>
+            <button type="submit">Salvar</button>
+            <button type="button" class="BtnVoltar">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS (ORDEM IMPORTA) -->
+    <script src="/FrontEndProftime/ModoEscuro/js.js"></script>
+    <script src="./curso.js"></script>
+
+</body>
+</html>

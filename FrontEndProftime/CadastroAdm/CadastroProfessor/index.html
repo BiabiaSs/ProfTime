@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfTime</title>
+
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/FrontEndProftime/ModoEscuro/ModoEscuro.css">
+</head>
+
+<body>
+    <div class="TituloPrincipal">
+        <h1>Cadastro de Professor</h1>
+    </div>
+
+    <main>
+        <!-- FORM COM ID -->
+        <form id="formProfessor">
+            <div>
+                <p class="Professor">Professor:</p>
+                <input type="text" id="Professor" required>
+
+                <div>
+                    <button type="submit">Cadastrar</button>
+                    <a href="/FrontEndProftime/TelasHome/TelaPrinciaplaAdm/index.html" class="BtnVoltar">Voltar</a>
+                </div>
+            </div>
+        </form>
+
+        <table class="TabelaProfessor">
+            <thead>
+                <tr>
+                    <th>Professor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <!-- TABELA LIMPA -->
+            <tbody id="tabelaProfessor"></tbody>
+        </table>
+    </main>
+
+    <!-- MODAL (deixa pra depois) -->
+    <div id="modalEditar" class="modal">
+      <div class="modalForm">
+        <form id="formEditar">
+          <input type="text" id="professorEditar">
+          <button type="submit">Salvar</button>
+          <button type="button" class="BtnVoltar">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="/FrontEndProftime/ModoEscuro/js.js"></script>
+    <script src="./professor.js"></script>
+
+</body>
+</html>
