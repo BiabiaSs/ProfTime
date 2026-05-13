@@ -38,7 +38,7 @@ form {
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
-.Curso{
+.Curso, .Periodo{
   text-align: left;
   padding: 5px;
   margin-top: 5px;
@@ -46,7 +46,7 @@ form {
   font-weight: bold;
 }
 
-input{
+input, select{
   padding: 8px;
   margin-top: 5px;
   width: 95%;
