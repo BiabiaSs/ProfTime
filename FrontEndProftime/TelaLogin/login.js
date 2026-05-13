@@ -60,13 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const tipoUsuario = dados.usuario.tipo.toLowerCase().trim();
 
       if (tipoUsuario === 'administrador') {
-        window.location.href = '/TelasHome/TelaPrinciaplaAdm/index.html';
+        window.location.href = '/FrontEndProftime/TelasHome/TelaPrinciaplaAdm/index.html';
       }
       else if (tipoUsuario === 'coordenador') {
-        window.location.href = '/TelasHome/TelaPrincipalCoordenador/index.html';
+        window.location.href = '/FrontEndProftime/TelasHome/TelaPrincipalCoordenador/index.html';
       }
       else if (tipoUsuario === 'professor') {
-        window.location.href = '/TelasHome/TelaPrincipalProfessor/index.html';
+        window.location.href = '/FrontEndProftime/TelasHome/TelaPrincipalProfessor/index.html';
       }
       else {
         alert("Tipo de usuário desconhecido");
