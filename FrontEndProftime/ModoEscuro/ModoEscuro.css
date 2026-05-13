@@ -31,7 +31,7 @@ html.dark{
   background-color: rgb(136,9,9) ;
 }
 
-html.dark  .BtnDark::after{ /*- Cria um conteúdo depois do elemento selecionado.*/
+html.dark  .BtnDark::after{ 
   content: "";
   left: 36px;
 }
