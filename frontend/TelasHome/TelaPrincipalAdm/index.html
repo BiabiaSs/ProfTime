@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+
+    <button class="BtnDark"></button>
+
+    <!-- 🔐 LOGOUT CORRETO -->
+    <button class="BtnSair" onclick="logout()">Sair</button>
+
+    <div class="Painel">
+        <img src="" alt="foto do adm" class="AdmFoto">
+        <h1>Administrador</h1>
+        <h2>Bem-vindo, <span id="nomeUsuario"></span></h2>
+    </div>
+    
+    <div class="Blocos">
+
+        <div>Usuário 
+            <a href="/frontend/CadastroAdm/CadastroUsuario/Index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+      
+        <div>Cursos 
+            <a href="/frontend/CadastroAdm/CadastroCurso/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+       
+        <div>Professores 
+            <a href="/frontend/CadastroAdm/CadastroProfessor/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+       
+        <div>Disciplinas 
+            <a href="/frontend/CadastroAdm/CadastroDisciplina/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+
+        <div>Grupos 
+            <a href="/frontend/CadastroAdm/CadastroGrupo/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+       
+        <div>Salas 
+            <a href="/frontend/CadastroAdm/CadastroLab/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+
+        <div>Turmas 
+            <a href="/frontend/CadastroAdm/CadastroTurma/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+       
+        <div>Disciplina e Turma 
+            <a href="/frontend/CadastroAdm/VincularTurmaDisciplina/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+       
+        <div>Professor e Disciplina 
+            <a href="/frontend/CadastroAdm/VincularProfDisciplina/index.html"> 
+                <button>Cadastrar</button>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Winfotec - Sistema de Cronograma de Aulas</p>
+    </footer>
+
+    <script src="./Adm.js"></script>
+    <script src="../../ModoEscuro/js.js"></script>
+
+</body>
+</html>

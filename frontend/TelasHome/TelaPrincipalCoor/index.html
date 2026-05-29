@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Coordenador</title>
+
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+
+    <button class="BtnDark"></button>
+
+    <!-- 🔐 LOGOUT CORRETO -->
+    <button class="BtnSair" onclick="logout()">Sair</button>
+
+    <div class="Painel">
+        <img src="" alt="Foto do coordenador" class="CodFoto">
+        <h1>Coordenador</h1>
+        <h2>Bem-vindo, <span id="nomeUsuario"></span></h2>
+    </div>
+      
+    <div class="Blocos">
+
+        <div>Criar Horário 
+            <a href="/frontend/CriarHorario/index.html"> 
+                <button>Criar</button>
+            </a>
+        </div>
+
+        <div>Usuário 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoUsuario/Index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+      
+        <div>Cursos 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoCurso/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+       
+        <div>Professores 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoProfessor/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+       
+        <div>Disciplinas 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoDisciplina/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+
+        <div>Grupos 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoGrupo/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+       
+        <div>Salas 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoLabSala/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+
+        <div>Turmas 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoTurma/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+       
+        <div>Disciplina e Turma 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoTurmaDisciplina/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+       
+        <div>Professor e Disciplina 
+            <a href="/frontend/VisualizaçãoCod/VisualizacaoProfDisciplina/index.html"> 
+                <button>Visualizar</button>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Winfotec - Sistema de Cronograma de Aulas</p>
+    </footer>
+
+    <script src="./Coor.js"></script>
+    <script src="/frontend/ModoEscuro/js.js"></script>
+
+</body>
+</html>

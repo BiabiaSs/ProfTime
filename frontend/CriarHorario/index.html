@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfTime - Cadastro de Horário</title>
+  <link rel="stylesheet" href="./css.css">
+  <link rel="stylesheet" href="/ModoEscuro/ModoEscuro.css">
+</head>
+
+<body>
+
+  <div class="TituloPrincipal">
+    <h1>Cadastro de Horário</h1>
+  </div>
+
+  <main>
+    <form id="formCadastro">
+      <div class="Linha">
+        <div>
+          <p class="Semana">Dia da Semana</p>
+          <select id="Semana" name="Semana" required>
+            <option value="">Selecione</option>
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Terça-feira</option>
+            <option value="Quarta-feira">Quarta-feira</option>
+            <option value="Quinta-feira">Quinta-feira</option>
+            <option value="Sexta-feira">Sexta-feira</option>
+          </select>
+        </div>
+
+        <div>
+          <p class="Fim">Horário Início</p>
+          <input type="time" id="HorarioInicio" name="HorarioInicio" required>
+        </div>
+
+        <div>
+          <p class="Fim">Horário Fim</p>
+          <input type="time" id="HorarioFim" name="HorarioFim" required>
+        </div>
+      </div>
+
+      <p class="Disciplina">Disciplina</p>
+      <select id="Disciplina" name="Disciplina" required>
+        <option value="">Selecione</option>
+        <option value="Computação em Nuvem e Mídias Sociais">Computação em Nuvem e Mídias Sociais</option>
+        <option value="Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Informática">Desenvolvimento do
+          Trabalho de Conclusão de Curso (TCC) em Informática</option>
+        <option value="Ética e Cidadania Organizacional">Ética e Cidadania Organizacional</option>
+        <option value="Gestão de Sistemas Operacionais III">Gestão de Sistemas Operacionais III</option>
+        <option value="Inglês Instrumental">Inglês Instrumental</option>
+        <option value="Internet das Coisas">Internet das Coisas</option>
+        <option value="Redes de Comunicação de Dados II">Redes de Comunicação de Dados II</option>
+        <option value="Segurança Digital">Segurança Digital</option>
+      </select>
+
+      <p class="Professor">Professor</p>
+      <select id="Professor" name="Professor" required>
+        <option value="">Selecione</option>
+        <option value="Emerson Marcelo Pedroso da Silva">Emerson Marcelo Pedroso da Silva</option>
+        <option value="Marcos Costa de Sousa">Marcos Costa de Sousa</option>
+        <option value="Higor Costa Guedes da Silva">Higor Costa Guedes da Silva</option>
+        <option value="Adilson Carlos de Santiago">Adilson Carlos de Santiago</option>
+        <option value="Rosana Maria Lopes Murakami">Rosana Maria Lopes Murakami</option>
+        <option value="Emerson Marcelo Pedroso da Silva">Emerson Marcelo Pedroso da Silva</option>
+        <option value="Wilhelm Klaus">Wilhelm Klaus</option>
+      </select>
+      </select>
+
+      <p class="Curso">Curso</p>
+      <select id="Curso" name="Curso" required>
+        <option value="">Selecione</option>
+        <option value="Informática">Informática</option>
+        <option value="Redes de Computadores">Redes de Computadores</option>
+        <option value="Desenvolvimento de Sistemas">Desenvolvimento de Sistemas</option>
+      </select>
+
+      <div class="Linha">
+        <div>
+          <p class="Turma">Turma</p>
+          <select id="Turma" name="Turma" required>
+            <option value="">Selecione</option>
+            <option value="1º Semestre">1º Semestre</option>
+            <option value="2º Semestre">2º Semestre</option>
+            <option value="3º Semestre">3º Semestre</option>
+          </select>
+        </div>
+        <div>
+          <p class="Grupo">Grupo</p>
+          <select id="Grupo" name="Grupo" required>
+            <option value="">Selecione</option>
+            <option value="A">Grupo A</option>
+            <option value="B">Grupo B</option>
+            <option value="A e B">Grupo A e B</option>
+          </select>
+        </div>
+        <div>
+          <p class="Sala">Sala</p>
+          <select id="Sala" name="Sala" required>
+            <option value="">Selecione</option>
+            <option value="Laboratório 01">Laboratório 01</option>
+            <option value="Laboratório 02">Laboratório 02</option>
+            <option value="Laboratório 03">Laboratório 03</option>
+            <option value="Laboratório 04">Laboratório 04</option>
+            <option value="Laboratório 05">Laboratório 05</option>
+            <option value="Laboratório 06">Laboratório 06</option>
+            <option value="Laboratório 07">Laboratório 07</option>
+            <option value="Sala 01">Sala 01</option>
+            <option value="Sala 02">Sala 02</option>
+            <option value="Sala 03">Sala 03</option>
+            <option value="Sala 04">Sala 04</option>
+            <option value="Sala 05">Sala 05</option>
+            <option value="Sala 06">Sala 06</option>
+            <option value="Sala 07">Sala 07</option>
+            <option value="Sala 08">Sala 08</option>
+            <option value="Sala 09">Sala 09</option>
+            <option value="Sala 10">Sala 10</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit">Cadastrar</button>
+        <a href="/frontend/TelasHome/TelaPrincipalCoor/index.html" class="BtnVoltar">Voltar</a>
+      </div>
+    </form>
+
+    <table class="TabelaHorario">
+      <thead>
+        <tr>
+          <th>Dia da Semana</th>
+          <th>Início</th>
+          <th>Fim</th>
+          <th>Disciplina</th>
+          <th>Professor</th>
+          <th>Curso</th>
+          <th>Turma</th>
+          <th>Grupo</th>
+          <th>Sala</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="modalEditar" class="modal">
+    <div class="modalForm">
+      <form id="formEditar">
+        <h2>Editar Horário</h2>
+        <div class="Linha">
+          <div>
+            <p class="Semana">Dia da Semana</p>
+            <select id="semanaEditar" required>
+              <option value="Segunda-feira">Segunda-feira</option>
+              <option value="Terça-feira">Terça-feira</option>
+              <option value="Quarta-feira">Quarta-feira</option>
+              <option value="Quinta-feira">Quinta-feira</option>
+              <option value="Sexta-feira">Sexta-feira</option>
+            </select>
+          </div>
+          <div>
+            <p class="Inicio">Início</p>
+            <input type="time" id="inicioEditar" required>
+          </div>
+          <div>
+            <p class="Fim">Fim</p>
+            <input type="time" id="fimEditar" required>
+          </div>
+        </div>
+
+        <p class="Disciplina">Disciplina</p>
+        <select id="disciplinaEditar" required>
+          <option value="">Selecione</option>
+          <option value="Computação em Nuvem e Mídias Sociais">Computação em Nuvem e Mídias Sociais</option>
+          <option value="Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Informática">Desenvolvimento do
+            Trabalho de Conclusão de Curso (TCC) em Informática</option>
+          <option value="Ética e Cidadania Organizacional">Ética e Cidadania Organizacional</option>
+          <option value="Gestão de Sistemas Operacionais III">Gestão de Sistemas Operacionais III</option>
+          <option value="Inglês Instrumental">Inglês Instrumental</option>
+          <option value="Internet das Coisas">Internet das Coisas</option>
+          <option value="Redes de Comunicação de Dados II">Redes de Comunicação de Dados II</option>
+          <option value="Segurança Digital">Segurança Digital</option>
+        </select>
+
+        <p class="Professor">Professor</p>
+        <select id="professorEditar" required>
+          <option value="">Selecione</option>
+          <option value="Emerson Marcelo Pedroso da Silva">Emerson Marcelo Pedroso da Silva</option>
+          <option value="Marcos Costa de Sousa">Marcos Costa de Sousa</option>
+          <option value="Higor Costa Guedes da Silva">Higor Costa Guedes da Silva</option>
+          <option value="Adilson Carlos de Santiago">Adilson Carlos de Santiago</option>
+          <option value="Rosana Maria Lopes Murakami">Rosana Maria Lopes Murakami</option>
+          <option value="Emerson Marcelo Pedroso da Silva">Emerson Marcelo Pedroso da Silva</option>
+          <option value="Wilhelm Klaus">Wilhelm Klaus</option>
+        </select>
+
+        <p class="Curso">Curso</p>
+        <select id="cursoEditar" required>
+          <option value="">Selecione</option>
+          <option value="Informática">Informática</option>
+          <option value="Redes de Computadores">Redes de Computadores</option>
+          <option value="Desenvolvimento de Sistemas">Desenvolvimento de Sistemas</option>
+
+        </select>
+
+        <div class="Linha">
+          <div>
+            <p class="Turma">Turma</p>
+            <select id="turmaEditar" required>
+              <option value="">Selecione</option>
+              <option value="1º Semestre">1º Semestre</option>
+              <option value="2º Semestre">2º Semestre</option>
+              <option value="3º Semestre">3º Semestre</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="Grupo">Grupo</p>
+            <select id="grupoEditar" name="grupoEditar" required>
+              <option value="">Selecione</option>
+              <option value="A">Grupo A</option>
+              <option value="B">Grupo B</option>
+              <option value="A e B">Grupo A e B</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="Sala">Sala</p>
+            <select id="salaEditar" required>
+              <option value="">Selecione</option>
+              <option value="">Selecione</option>
+
+              <option value="Laboratório 01">Laboratório 01</option>
+              <option value="Laboratório 02">Laboratório 02</option>
+              <option value="Laboratório 03">Laboratório 03</option>
+              <option value="Laboratório 04">Laboratório 04</option>
+              <option value="Laboratório 05">Laboratório 05</option>
+              <option value="Laboratório 06">Laboratório 06</option>
+              <option value="Laboratório 07">Laboratório 07</option>
+              <option value="Sala 01">Sala 01</option>
+              <option value="Sala 02">Sala 02</option>
+              <option value="Sala 03">Sala 03</option>
+              <option value="Sala 04">Sala 04</option>
+              <option value="Sala 05">Sala 05</option>
+              <option value="Sala 06">Sala 06</option>
+              <option value="Sala 07">Sala 07</option>
+              <option value="Sala 08">Sala 08</option>
+              <option value="Sala 09">Sala 09</option>
+              <option value="Sala 10">Sala 10</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top: 20px;">
+          <button type="submit">Salvar Alterações</button>
+          <button type="button" class="BtnVoltar" id="btnCancelarEdicao">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/frontend/ModoEscuro/js.js"></script>
+  <script src="./cadastrohorario.js"></script>
+</body>
+
+</html>

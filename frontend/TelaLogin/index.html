@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ProfTime</title>
+
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="/frontend/ModoEscuro/ModoEscuro.css">
+</head>
+
+<body>
+
+<h1>ProfTime</h1>
+<button class="BtnDark"></button>
+
+<div class="Login">
+    <div class="Bloco">
+
+        <form id="Login">
+            <h2 class="Usuario">Login</h2>
+
+            <label for="TipoUsuario">Tipo de Usuário:</label>
+            <select id="TipoUsuario" required>
+                <option value="">Selecione</option>
+                <option value="administrador">Administrador</option>
+                <option value="coordenador">Coordenador</option>
+                <option value="professor">Professor</option>
+            </select>
+
+            <div class="Form">
+                <div>
+                    <label for="Usuario">Email:</label>
+                    <input type="email" id="Usuario" required autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="Senha">Senha:</label>
+                    <input type="password" id="Senha" required autocomplete="current-password">
+                </div>
+            </div>
+
+            <button type="submit" class="Btn">Entrar</button>
+
+            <div class="EsqueceuSenha">
+                <a href="../RecuperarSenha/index.html">Esqueceu a Senha?</a>
+            </div>
+        </form>
+
+        <footer class="Footer">@ 2026 Proftime</footer>
+    </div>
+</div>
+
+<script src="./login.js"></script>
+<script src="/frontend/ModoEscuro/js.js"></script>
+
+</body>
+</html>

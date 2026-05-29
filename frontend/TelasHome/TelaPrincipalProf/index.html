@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Professor</title>
+
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="../../ModoEscuro/ModoEscuro.css">
+</head>
+<body>
+
+    <button class="BtnDark"></button>
+
+    <!-- 🔐 LOGOUT CORRETO -->
+    <button class="BtnSair" onclick="logout()">Sair</button>
+
+    <div class="Painel">
+        <img src="" alt="Foto do professor" class="ProFoto">
+        <h1>Professor</h1>
+        <h2>Bem-vindo, <span id="nomeUsuario"></span></h2>
+    </div>
+
+    <div class="Blocos">
+        <div>
+            Administração 
+            <button id="BtnHorario">Ver Horário</button>
+        </div>
+    </div>
+
+    <!-- 🟢 TABELA -->
+    <div id="Horario" style="display: none;">
+        <main>
+            <table class="TabelaGrupos">
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horário Início</th>
+                        <th>Horário Fim</th>
+                        <th>Disciplina</th>
+                        <th>Curso</th>
+                        <th>Turma</th>
+                        <th>Grupo</th>
+                        <th>Sala</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyHorario">
+                    <!-- preenchido via JS -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>Winfotec - Sistema de Cronograma de Aulas</p>
+    </footer>
+
+    <script src="./Prof.js"></script>
+    <script src="../../ModoEscuro/js.js"></script>
+
+</body>
+</html>
